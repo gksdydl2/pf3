@@ -1,0 +1,134 @@
+#news {
+  
+}
+#news div.wrap {
+  max-width: 1200px;
+}
+#news div.wrap h2 {
+  font-family: 'Titillium Web', sans-serif;
+  margin-bottom: 50px;
+}
+#news div.wrap article {
+  margin-top: 20px;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+#news div.wrap article a {
+  display: grid;
+  grid-template-columns: 160px 920px 120px;
+  grid-template-rows: auto auto auto;
+  row-gap: 12px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  transition: all .5s;
+}
+#news div.wrap article a:hover{
+  border-color: #1c9ad6;
+}
+#news div.wrap article a h3 {
+  order: 2;
+  font-weight: bold;
+  padding-top: 34px;
+}
+#news div.wrap article a h3::before{
+  content: "공지";
+  border: 1px solid #1C9AD6;
+  color: #1C9AD6;
+  font-size: 15px;
+  padding: 5px 15px;
+  margin-right: 20px;
+}
+#news div.wrap article a p {
+  order: 4;
+  white-space: nowrap;
+  overflow: hidden;
+	text-overflow: ellipsis;
+  line-height: 1;
+  font-size: 16px;
+  padding-bottom: 36px;
+  margin-top: 10px;
+}
+#news div.wrap article a time {
+  order: 1;
+  grid-row: 1 / span 3;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #ccc;
+  transition: all .5s;
+  font-family: 'Titillium Web', sans-serif;
+}
+#news div.wrap article a:hover time{
+  color: #1c9ad6;
+}
+#news div.wrap article a time span {
+  font-size: 46px;
+}
+#news div.wrap article a > span {
+  order: 3;
+  transform: translateY(50%);
+  color: #ccc;
+  transition: all .5s;
+  width: 47px;
+  height: 47px;
+  margin-left: 70px;
+}
+#news div.wrap article a:hover > span {
+  border-color: #1C9AD6;
+}
+#news div.wrap article a > span::before{
+  transition: all .5s;
+}
+#news div.wrap article a:hover > span::before{
+  border-color: #1C9AD6;
+}
+#news div.wrap > a.list {
+  font-family: 'Titillium Web', sans-serif;
+  width: 80px;
+  border: 1px solid;
+  line-height: 3;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  transition: all .5s;
+  overflow: hidden;
+  font-size: 14px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+#news div.wrap > a.list:hover{
+  background-color: transparent;
+  color: white;
+  border: 1px solid black;
+}
+#news div.wrap > a.list::before{
+  content: "";
+  background-image: url(../img/list.svg);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+}
+#news div.wrap > a.list:hover::before{
+  background-image: url(../img/list-w.svg);
+}
+#news div.wrap > a.list::after{
+  content: "";
+  width: 0;
+  height: 48px;
+  background-color: black;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  transform-origin: 0 0;
+  transform: skewX(-30deg);
+  transition: all .5s;
+  z-index: -1;
+}
+#news div.wrap > a.list:hover::after{
+  width: 138%;
+}

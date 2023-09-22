@@ -1,0 +1,128 @@
+div#title {
+  background-image: url(../img/title.jpg);
+  min-height: 490px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100% + 200px);
+}
+div#title .wrap {
+  color: white;
+  position: relative;
+  bottom: 100px;
+}
+div#title .wrap hgroup {
+}
+div#title .wrap hgroup h2.h4 {
+  padding-bottom: 10px;
+}
+div#title .wrap hgroup h3.h1 {
+  font-size: 90px;
+  font-weight: 200;
+  font-family: 'Titillium Web', sans-serif;
+}
+/* 스크롤 */
+/* div#title .wrap a.scroll{
+  bottom: 60px;
+  position: absolute;
+  color: white;
+} */
+div#title .wrap a.scroll {
+  bottom: 160px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  animation-name: updown;
+  animation-duration: 2s;
+  animation-iteration-count: 4;
+}
+div#title .wrap a.scroll:hover {
+  background: rgba(255, 255, 255, .15);
+}
+@keyframes updown{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(50px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+div#title .wrap a.scroll::before{
+  content: "";
+  border-left: 2px solid white;
+  height: 25px;
+  display: block;
+}
+div#title .wrap a.scroll::after{
+  content: "";
+  border: 2px solid white;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(-45deg);
+  margin-top: -12px;
+}
+div#title .wrap a.scroll span{
+  width: 1px;
+  height: 1px;
+  display: block;
+  background-color: white;
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+div#title .wrap a.scroll span:nth-child(1){
+  left: 0;
+  top: 0;
+  animation-name: one;
+  width: 0;
+}
+@keyframes one{
+  100%{
+    width: 100%;
+  }
+}
+div#title .wrap a.scroll span:nth-child(2){
+  right: 0;
+  top: 0;
+  animation-name: two;
+  animation-delay: 0.5s;
+  height: 0;
+}
+@keyframes two{
+  100%{
+    height: 100%;
+  }
+}
+div#title .wrap a.scroll span:nth-child(3){
+  right: 0;
+  bottom: 0;
+  animation-name: one;
+  animation-delay: 1s;
+  width: 0;
+}
+div#title .wrap a.scroll span:nth-child(4){
+  left: 0;
+  bottom: 0;
+  animation-name: two;
+  animation-delay: 1.5s;
+  height: 0;
+}
+
+
+
+
+
+
+
+

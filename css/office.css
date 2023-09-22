@@ -1,0 +1,55 @@
+#office {
+  
+}
+#office .wrap {
+  max-width: 100%;
+}
+#office .wrap h2 {
+  
+}
+#office .wrap ul {
+  height: 20.25vw;
+}
+#office .wrap ul li {
+  width: 50%;
+  background-size: 125%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 1.6s;
+}
+#office .wrap ul li:hover{
+  background-size: 130%;
+}
+#office .wrap ul li:nth-child(1) {
+  background-image: url(../img/office.jpg);
+}
+#office .wrap ul li:nth-child(2) {
+  background-image: url(../img/factory.jpg);
+}
+#office .wrap ul li a {
+  height: 100%;
+  color: white;
+}
+#office .wrap ul li a hgroup {
+  
+}
+#office .wrap ul li a hgroup h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+#office .wrap ul li a hgroup h4 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  line-height: 2;
+  font-size: 30px;
+  padding-top: 7px;
+}
+#office .wrap ul li a span.arrow {
+  background-image: url(../img/arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+  font-size: 0;
+}

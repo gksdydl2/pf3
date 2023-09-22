@@ -1,0 +1,110 @@
+#recco {
+  margin-top: -200px;
+}
+#recco div.wrap {
+  max-width: 1200px;
+}
+#recco div.wrap article {
+  width: calc(100% / 2);
+}
+#recco div.wrap article.recruit {
+  position: relative;
+}
+#recco div.wrap article.recruit::before{
+  content: "";
+  background-image: url(../img/recruit.png);
+  background-repeat: no-repeat;
+  width: 323px;
+  height: 769px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -40px;
+  z-index: 0;
+}
+#recco div.wrap article.recruit::after{
+  content: "";
+  width: 100%;
+  height: 335px;
+  display: block;
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+}
+#recco div.wrap article.recruit hgroup {
+  
+}
+#recco div.wrap article.recruit hgroup h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+  font-size: 55px;
+  color: white;
+  background-color: #E7E7E5;
+  padding: 150px 0 200px 100px;
+}
+#recco div.wrap article.recruit hgroup h3 {
+  padding-left: 100px;
+  padding-top: 75px;
+  padding-bottom: 30px;
+  font-size: 26px;
+  position: relative;
+  z-index: 3;
+}
+#recco div.wrap article.recruit>*:not(hgroup){
+  margin-left: 100px;
+}
+#recco div.wrap article.recruit p {
+  line-height: 1.75;
+  font-size: 16px;
+  position: relative;
+  z-index: 3;
+}
+#recco div.wrap article.recruit a {
+  margin-bottom: 100px;
+  /*! display: block; */
+  position: relative;
+  z-index: 3;
+  margin-top: 15px;
+}
+#recco div.wrap article.corpo {
+  background-image: url(../img/corpo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 729px;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  position: relative;
+}
+#recco div.wrap article.corpo::before{
+  content: "";
+  border: 1px solid rgba(255, 255, 255, .3);
+  width: calc(100% - 34px);
+  height: calc(100% - 34px);
+  position: absolute;
+}
+#recco div.wrap article.corpo:hover::before{
+  border-width: 4px;
+  transition: all .5s;
+}
+#recco div.wrap article.corpo hgroup {
+  gap: 15px;
+  flex-direction: column-reverse;
+  color: white;
+}
+#recco div.wrap article.corpo hgroup h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+  font-size: 55px;
+  line-height: 1.5;
+}
+#recco div.wrap article.corpo hgroup h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+#recco div.wrap article.corpo a {
+  position: relative;
+  color: white;
+}
