@@ -1,5 +1,5 @@
-# 프로젝트명 : 삼성전자 홈페이지 클론코딩
-
+# 프로젝트명 : 한국알콜산업 홈페이지 클론코딩
+클론코딩을 통해 GNB(Global Navigation Bar) 포커스 적용, GNB 스크롤 시 스타일 변형, 반응형 웹(Responsive Web) 작업하였습니다.
 
 ## 원본 웹사이트
 원본 url: https://www.ka.co.kr/
@@ -25,6 +25,7 @@
 
 ## 작업페이지
 - index
+- mobile index
 
 ## 작업기간
 2주
